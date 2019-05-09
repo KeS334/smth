@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.grid, .options-gr div, .options div, .eventCont-gr, .event .eventCont {
+  display: grid; }
+
+.twofr-gr, .position1, .position2, header {
+  grid-template-columns: 1fr 1fr; }
+
+.options-gr, .options {
+  grid-template-columns: repeat(4, 1fr); }
+
+.results-gr, .results {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.city-gr, .event .eventCont .city {
+  grid-row: city;
+  grid-column: city; }
+
+.img-gr, .event .eventCont img {
+  grid-row: img;
+  grid-column: img; }
+
+.price-gr, .event .eventCont .price {
+  grid-row: price;
+  grid-column: price; }
+
+.date-gr, .event .eventCont .date {
+  grid-row: date;
+  grid-column: date; }
+
+.pager-gr, .pager {
+  grid-column-start: 2;
+  grid-template-columns: repeat(6, 1fr); }
+
+.position1 {
+  grid-template-areas: "img img" "city price" "city date";
+  grid-template-rows: 150px 1fr 1fr; }
+.position1 .price {
+  text-align: right; }
+.position1 .date {
+  text-align: right; }
+
+.position2 {
+  grid-template-areas: "city city" "img img" "price date";
+  grid-template-rows: 1fr 150px 1fr; }
+.position2 .city {
+  text-align: center; }
+.position2 .price {
+  text-align: left;
+  margin-left: 20px; }
+.position2 .date {
+  text-align: right; }
+
+.position3 {
+  grid-template-areas: "img city" "img price" "img date";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr); }
+.position3 .city, .position3 .price, .position3 .date {
+  text-align: center; }
+
+.grid, .options-gr div, .options div, .eventCont-gr, .event .eventCont {
+  display: grid; }
+
+.twofr-gr, .position1, .position2, header {
+  grid-template-columns: 1fr 1fr; }
+
+.options-gr, .options {
+  grid-template-columns: repeat(4, 1fr); }
+
+.results-gr, .results {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.city-gr, .event .eventCont .city {
+  grid-row: city;
+  grid-column: city; }
+
+.img-gr, .event .eventCont img {
+  grid-row: img;
+  grid-column: img; }
+
+.price-gr, .event .eventCont .price {
+  grid-row: price;
+  grid-column: price; }
+
+.date-gr, .event .eventCont .date {
+  grid-row: date;
+  grid-column: date; }
+
+.pager-gr, .pager {
+  grid-column-start: 2;
+  grid-template-columns: repeat(6, 1fr); }
+
+.position1 {
+  grid-template-areas: "img img" "city price" "city date";
+  grid-template-rows: 150px 1fr 1fr; }
+.position1 .price {
+  text-align: right; }
+.position1 .date {
+  text-align: right; }
+
+.position2 {
+  grid-template-areas: "city city" "img img" "price date";
+  grid-template-rows: 1fr 150px 1fr; }
+.position2 .city {
+  text-align: center; }
+.position2 .price {
+  text-align: left;
+  margin-left: 20px; }
+.position2 .date {
+  text-align: right; }
+
+.position3 {
+  grid-template-areas: "img city" "img price" "img date";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr); }
+.position3 .city, .position3 .price, .position3 .date {
+  text-align: center; }
+
+header {
+  padding: 0 20px;
+  align-items: center;
+  height: 50px;
+  font-size: 2em; }
+header .logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  color: black; }
+header .search_by_word {
+  margin: 0 0 0 auto; }
+header .search_by_word input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: white;
+  font-size: 1.5em;
+  z-index: 11; }
+header .search_by_word input::-webkit-input-placeholeder {
+  color: white; }
+
+.layerHead {
+  background-color: #34D1B2;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 50px;
+  width: 100%; }
+
+.backImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 0.9;
+  min-width: 100%;
+  height: 400px; }
+
+.description {
+  height: 100px; }
+.description h1, .description h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  text-align: center;
+  color: white; }
+.description h1 {
+  font-size: 50px; }
+.description h2 {
+  font-size: 36px; }
+
+.serchZone {
+  height: 200px;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  /*.price{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 200px;
+      &:first-child {
+          grid-column: 1/2;
+      }
+      input{
+              width: auto;
+          }
+  }*/ }
+.serchZone .options {
+  align-items: center; }
+.serchZone .options div input {
+  width: 200px;
+  margin: 0 auto; }
+.serchZone .button {
+  margin-top: 50px; }
+.serchZone .button button {
+  margin: 0 auto;
+  align-self: center;
+  height: 60px;
+  width: 240px;
+  font-family: "Open Sans";
+  font-size: 2em;
+  color: white;
+  background-color: #EE3608;
+  border: none; }
+
+.grid, .options-gr div, .options div, .eventCont-gr, .event .eventCont {
+  display: grid; }
+
+.twofr-gr, .position1, .position2, header {
+  grid-template-columns: 1fr 1fr; }
+
+.options-gr, .options {
+  grid-template-columns: repeat(4, 1fr); }
+
+.results-gr, .results {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.city-gr, .event .eventCont .city {
+  grid-row: city;
+  grid-column: city; }
+
+.img-gr, .event .eventCont img {
+  grid-row: img;
+  grid-column: img; }
+
+.price-gr, .event .eventCont .price {
+  grid-row: price;
+  grid-column: price; }
+
+.date-gr, .event .eventCont .date {
+  grid-row: date;
+  grid-column: date; }
+
+.pager-gr, .pager {
+  grid-column-start: 2;
+  grid-template-columns: repeat(6, 1fr); }
+
+.position1 {
+  grid-template-areas: "img img" "city price" "city date";
+  grid-template-rows: 150px 1fr 1fr; }
+.position1 .price {
+  text-align: right; }
+.position1 .date {
+  text-align: right; }
+
+.position2 {
+  grid-template-areas: "city city" "img img" "price date";
+  grid-template-rows: 1fr 150px 1fr; }
+.position2 .city {
+  text-align: center; }
+.position2 .price {
+  text-align: left;
+  margin-left: 20px; }
+.position2 .date {
+  text-align: right; }
+
+.position3 {
+  grid-template-areas: "img city" "img price" "img date";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr); }
+.position3 .city, .position3 .price, .position3 .date {
+  text-align: center; }
+
+.results {
+  background-color: #F8FEFE; }
+
+.event {
+  width: 300px;
+  height: 270px;
+  margin: 50px auto;
+  background-color: #F3F3F3; }
+.event .eventCont {
+  width: 90%;
+  height: 220px;
+  background-color: #CFCFCF;
+  margin: 10px auto;
+  padding: 10px 5%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+.event .eventCont p {
+  padding: 5px 0; }
+.event .eventCont .city {
+  align-self: center; }
+.event .eventCont img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+.event .ev {
+  font-family: "Open Sans", sans-serif;
+  text-align: center; }
+
+.pager {
+  height: 30px;
+  width: 200px;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 20px; }
+.pager div {
+  background-color: #CFCFCF;
+  padding: 6px 10px;
+  margin: 1px; }
+
+.buttonsPoz {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  background-color: #CFCFCF;
+  border-radius: 15px; }
+.buttonsPoz div {
+  background-color: white;
+  border-radius: 20px;
+  width: 40px;
+  margin: 5px; }
+.buttonsPoz div:hover {
+  cursor: pointer; }
+.buttonsPoz div p {
+  font-size: 2em;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
